@@ -1,1 +1,1 @@
-# raspberryPi_TensorFlowLite
+# AWS Image Rekognition with OpenCV 
