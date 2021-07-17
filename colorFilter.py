@@ -40,7 +40,7 @@ def onlyRedPart(raw_img):
     
     result = cv2.bitwise_and(raw_img, raw_img, mask=full_mask)
 
-    return full_mask, result, lower_mask
+    return full_mask, result
 
 """ Testing only red color
 red = onlyRedPart(raw_img)[1]
