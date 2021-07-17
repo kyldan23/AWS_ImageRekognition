@@ -20,7 +20,7 @@ def main(photo):
 
 if __name__ == "__main__":
     openCV_raw_img = tk.takeSingleImage()
-    img_name = './referenceImages/{}.jpg'.format(str(uuid.uuid4()))
+    img_name = './webcamImages/{}.jpg'.format(str(uuid.uuid4()))
     cv2.imwrite(img_name, openCV_raw_img)
     main(img_name) #Amazon Image Rekognition 
     

@@ -6,9 +6,9 @@ cv2.namedWindow('canny edge photo')
 cv2.createTrackbar('lower', 'canny edge photo', 0, 255, lambda x: None)
 cv2.createTrackbar('upper', 'canny edge photo', 0, 255, lambda x: None)
 
-raw_img = cv2.imread('referenceImages/coke.jpg')
+raw_img = cv2.imread('referenceImages/coke1.jpg')
 
-blur_img = cv2.blur(raw_img, (5,5))
+blur_img = cv2.blur(raw_img, (10,10))
 #Filter out red color only
 red_mask, red_img = onlyRedPart(blur_img)
 #Convert to grayscale 
